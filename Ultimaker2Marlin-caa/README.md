@@ -1,5 +1,19 @@
+### From
+- https://github.com/Ultimaker/UM2.1-Firmware
+- https://github.com/TinkerGnome/Ultimaker2Marlin
+
+### Configuration.h
+- INVERT_X_DIR: true // (no chnage)
+- INVERT_Z_DIR: true // (no chnage)
+- INVERT_E0_DIR: true
+
+### Configuration_adv.h
+- D_FILAMENT (2.85 -> 1.75)
+- diameter = 1.75; (UltiLCD2_menu_material.cpp)
+---
+
 * Download the latest version from the <a href="https://github.com/TinkerGnome/Ultimaker2Marlin/releases">Release page</a>
-* Description <a href="http://umforum.ultimaker.com/index.php?/topic/10474-tinker-firmware/">en français</a>
+* Description <a href="http://umforum.ultimaker.com/index.php?/topic/10474-tinker-firmware/">en franÃ§ais</a>
 
 
 ### Changelist for this fork:
