@@ -3,8 +3,8 @@
 - https://github.com/TinkerGnome/Ultimaker2Marlin
 
 ### Configuration.h
-- INVERT_X_DIR: true // (no chnage)
-- INVERT_Z_DIR: true // (no chnage)
+- INVERT_X_DIR: true // (default)
+- INVERT_Z_DIR: true // (default)
 - INVERT_E0_DIR: true
 
 ### Configuration_adv.h
