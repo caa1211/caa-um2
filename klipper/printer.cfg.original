@@ -37,7 +37,7 @@ enable_pin: !PC3
 microsteps: 16
 rotation_distance: 16
 endstop_pin: ^!PA7
-#position_endstop: 214
+position_endstop: 214
 position_max: 215
 homing_speed: 20.0
 position_min: -3.0
@@ -48,13 +48,14 @@ dir_pin: !PL6
 enable_pin: !PC0
 microsteps: 16
 rotation_distance: 9.133264
-nozzle_diameter: 0.400
-filament_diameter: 1.750
+nozzle_diameter: 0.600
+filament_diameter: 2.850
 heater_pin: PE4
 sensor_type: PT100 INA826
 sensor_pin: PK0
 min_temp: 0
 max_temp: 275
+max_extrude_only_distance: 800.0
 control = pid
 pid_kp = 16.644
 pid_ki = 1.099
@@ -75,12 +76,12 @@ pid_kd = 1054.331
 pin: PH4
  
 [mcu]
-serial: /dev/serial/by-id/usb-Arduino__www.arduino.cc__0042_85735313832351214042-if00
+serial: /dev/serial/by-id/usb-Ultimaker_BV__www.ultimaker.com__Ultimaker_2.0-if00
  
 [printer]
 kinematics: cartesian
 max_velocity: 300
-max_accel: 2000
+max_accel: 3000
 max_z_velocity: 25
 max_z_accel: 30
  
@@ -129,15 +130,3 @@ encoder_steps_per_detent: 2
 reset_pin: PE3
 encoder_pins: ^PG1, ^PG0
 click_pin: ^PD2
-
-[bed_screws]
-screw1: 20, 20
-screw2: 200, 20
-screw3: 110, 190
-screw4: 110, 100
-
-#*# <---------------------- SAVE_CONFIG ---------------------->
-#*# DO NOT EDIT THIS BLOCK OR BELOW. The contents are auto-generated.
-#*#
-#*# [stepper_z]
-#*# position_endstop = 209.920
