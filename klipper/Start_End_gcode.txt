@@ -6,6 +6,7 @@
 # Start
 
 M42 S15 ;LED on
+SET_LED LED=case_light WHITE=0.09 SYNC=0 TRANSMIT=1
 START_PRINT BED_TEMP={material_bed_temperature_layer_0} EXTRUDER_TEMP={material_print_temperature_layer_0}
 
 
@@ -26,3 +27,4 @@ G90 ;absolute positioning
 
 M84 ;steppers off
 M42 S0 ;LED off
+SET_LED LED=case_light WHITE=0.0 SYNC=0 TRANSMIT=1
